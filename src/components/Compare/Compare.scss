@@ -1,0 +1,33 @@
+.compare {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &__text {
+        padding: 15px;
+        border: 1px solid #c4c4c4;
+        box-sizing: border-box;
+        max-height: 55px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-top: -1px;
+        margin-right: -1px;
+
+        &_color_red {
+            color: red;
+        }
+
+        &_color_green {
+            color: green;
+        }
+
+        &_type_bold {
+            font-weight: 600;
+        }
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

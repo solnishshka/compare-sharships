@@ -1,0 +1,29 @@
+.button {
+    background-color: rgb(248, 187, 16);
+    color: #2b2b2b;
+    border: none;
+    padding: 15px 28px;
+    border-radius: 15px;
+
+    &_variant_bordered {
+        border: #2b2b2b;
+        background-color: #c4c4c4;
+        color: #2b2b2b;
+    }
+
+    &_variant_link {
+        border: none;
+        background-color: transparent;
+        text-decoration: underline;
+        color: #2b2b2b;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:disabled,
+    &:disabled:hover {
+        opacity: 0.3;
+    }
+}

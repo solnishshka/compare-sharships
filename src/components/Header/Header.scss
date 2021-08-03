@@ -1,0 +1,23 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    &__content {
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    &__button {
+        background-color: rgb(248, 187, 16);
+        color: #23083b;
+        border: none;
+        padding: 15px 28px;
+    }
+}
