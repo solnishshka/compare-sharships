@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Приложение для сравнения звездолетов из Звездных войн
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
