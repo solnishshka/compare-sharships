@@ -63,7 +63,7 @@ const Starships: FC = () => {
                         </Button>
                     </div>
                     <p className="starships__count">Выбрано для сравнения: {comparedStarships.length ?? 0}</p>
-                    <FixedButton/>
+                    <FixedButton onClick={handleToggleCompare} disabled={comparedStarships.length < 2}/>
                 </div>
                 <Pagination>{items}</Pagination>
                 {content}

@@ -5,7 +5,7 @@ import Button from '../Button';
 
 import './FixedButton.scss';
 
-const FixedButton: FC = () => {
+const FixedButton: FC<{onClick: () => void; disabled: boolean}> = ({onClick, disabled}) => {
     const [visible, setVisible] = useState(false);
 
     const toggleFixedButton = () => {
@@ -18,7 +18,15 @@ const FixedButton: FC = () => {
 
     window.onscroll = toggleFixedButton;
 
-    return <Button className={cns("fixedButton", visible && "fixedButton_visible")}>Сравнить</Button>
+    return (
+        <Button 
+            className={cns("fixedButton", visible && "fixedButton_visible")}
+            onClick={onClick}
+            disabled={disabled}
+        >
+            Сравнить
+        </Button>
+    )
 }
 
 export default memo(FixedButton);
